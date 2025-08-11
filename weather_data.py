@@ -58,7 +58,7 @@ def wmo_code_to_icon(code, is_day):
     code = str(code)
 
     if code in ("0"):  # Clear sky
-        return "󰖨" if is_day else ""
+        return "" if is_day else ""
     if code in ("1", "2", "3"):  # Mainly clear, partly cloudy, and overcast
         return "" if is_day else ""
     if code in ("45", "48"):  # Fog and depositing rime fog
