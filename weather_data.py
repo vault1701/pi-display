@@ -14,7 +14,7 @@ DAILY_IMG_H = 300
 TODAYS_IMG_W = 500
 DAY_HOUR_DISTANCE = 124
 
-WEATHER_API_URL = "https://api.open-meteo.com/v1/dwd-icon"
+WEATHER_API_URL = "https://api.open-meteo.com/v1/forecast"
 
 TEMP = "temperature_2m"
 TEMP_MIN = "temperature_2m_min"

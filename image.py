@@ -5,13 +5,15 @@ import constants
 import util
 import dht
 import weather_data
+import date_time
 
 
 def create_image(config):
     img = Image.new("1", (constants.SCREEN_W, constants.SCREEN_H))
 
-    img.paste(weather_data.create_module(config), (0, 0))
-    img.paste(dht.create_module(config), (0, 240))
+    #img.paste(weather_data.create_module(config), (0, 0))
+    #img.paste(dht.create_module(config), (0, 240))
+    img.paste(date_time.create_module(config), (0, 0))
 
     # draws timestamp in the bottom right
     ImageDraw.Draw(img).text(
